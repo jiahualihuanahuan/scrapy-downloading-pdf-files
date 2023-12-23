@@ -1,11 +1,11 @@
 import scrapy
 from scrapy.linkextractors import LinkExtractor
 from scrapy.spiders import CrawlSpider, Rule 
-from myspider.items import MyspiderItem
+from file.items import FileItem
 
 
 class ImagesSpider(CrawlSpider):
-    name = "images"
+    name = "filedl"
     # allowed_domains = ["", ""]
     start_urls = ["https://arxiv.org/list/cs.AI/recent"]
 
